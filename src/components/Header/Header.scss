@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--dark-blue-color);
+  color: var(--white-color);
+
+  .logo {
+    width: 120px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+  }
+
+  .menu,
+  .menu-autorization {
+    a {
+      padding: 0.3rem 0.5rem;
+      border-bottom: 1px solid #ffffff00;
+      transition: 0.5s;
+
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+
+      &:hover {
+        color: var(--hover-color);
+        border-color: var(--hover-color);
+      }
+
+      &.active {
+        color: var(--active-color);
+        border-color: var(--active-color);
+      } 
+    }
+  }
+}
